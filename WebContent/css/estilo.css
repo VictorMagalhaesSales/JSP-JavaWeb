@@ -1,0 +1,93 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-color: #ecf0f5;
+}
+aside {
+	float: left;
+	width: 17%;
+	height: 100%;
+	position: fixed;
+	color: white;
+	box-shadow: .5px .5px 10px #cccccc;
+	background-color: white;
+}
+aside > img {
+	background-color: white;
+}
+
+.over {
+	overflow-y: scroll;
+	height: 70%;
+}
+
+.corpo {
+	float: right;
+	width: 83%;
+	padding: 50px;
+	padding-top: 50px;
+	background-image: url("../img/cafe.png");
+	background-repeat: repeat-y;
+}
+.visualizar{
+	height: 700px;
+	background-color: white;
+	border-top: 2px solid red;
+	padding: 50px;
+	box-shadow: 2px 2px 5px #eeeeee;
+}
+
+.cadastrar {
+	background-color: white;
+	border-top: 2px solid green;
+	padding: 20px;
+	box-shadow: 2px 2px 5px #eeeeee;
+	margin-top: 100px;
+	padding-bottom: 100px;
+}
+
+.sis {
+	border: 0px 0px 0px 5px solid gray;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #d08e00;
+	border-top: 1px solid #d08e00;
+	font-size: 17px;
+}
+.laranja {
+	padding-top: 70px;
+	background-color: #ffae00;
+	height: 100%;
+	background-image: url("../img/lateral.png");
+	background-repeat: repeat-y;
+}
+
+.img {
+	padding: 40px 10px 40px 10px;
+	background-color: white;
+}
+
+h4 {
+  padding-bottom: 10px;
+  background: linear-gradient(to right, white , white,  transparent);
+  font-weight: 100;
+}
+
+.form-control {
+	border-radius: 0px 20px 0px 20px;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: .5px solid #343a40;
+	background-color: transparent;
+}
+.f1{
+	float: left;
+	margin-right: -20px;
+}
+.f2 {
+	float: right;
+}
