@@ -1,11 +1,11 @@
 <%@page import="dao.UsuarioDAO"%>
 <%@page import="model.Usuario"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="ISO-8859-1">
-	<title>Excluir usuário</title>
+	<meta charset="UTF-8">
+	<title>Excluir usuÃ¡rio</title>
 	</head>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/estilo.css">
@@ -21,13 +21,13 @@
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">Exclusão de usuário</h5>
+	        <h5 class="modal-title" id="exampleModalLabel">ExclusÃ£o de usuÃ¡rio</h5>
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
 	      </div>
 	      <div class="modal-body">
-	        <p>Usuário excluido com sucesso.</p>
+	        <p>UsuÃ¡rio excluido com sucesso.</p>
 	      </div>
 	      <div class="modal-footer">
 	      	<form action="index.jsp">
@@ -44,13 +44,13 @@
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Exclusão de usuário</h5>
+		        <h5 class="modal-title" id="exampleModalLabel">ExclusÃ£o de usuÃ¡rio</h5>
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
 		      <div class="modal-body">
-		        <p>Não foi possível excluir o usuário, tente mais tarde.</p>
+		        <p>NÃ£o foi possÃ­vel excluir o usuÃ¡rio, tente mais tarde.</p>
 		      </div>
 		      <div class="modal-footer">
 		      	<form action="index.jsp">

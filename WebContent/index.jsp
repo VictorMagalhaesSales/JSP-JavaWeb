@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"  pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
 <%@page import="dao.UsuarioDAO"%>
 <%@page import="dao.Conexao"%>
 <%@page import="model.Usuario"%>
@@ -17,8 +17,8 @@
 			<center><img src="img/crud.png" width="200" class="img"></center>
 			<div class="laranja">
 				<div class="nav flex-column nav-pills" aria-orientation="vertical">
-			      <a class="nav-link sis js-scroll-trigger waves-effect" href="#visualizar"><img src="img/visu.png" width="25px"> Visualizar usuários</a>
-			      <a class="nav-link sis js-scroll-trigger" href="#cadastrar"><img src="img/save.png" width="25px"> Cadastrar usuários</a>
+			      <a class="nav-link sis js-scroll-trigger waves-effect" href="#visualizar"><img src="img/visu.png" width="25px"> Visualizar usuÃ¡rios</a>
+			      <a class="nav-link sis js-scroll-trigger" href="#cadastrar"><img src="img/save.png" width="25px"> Cadastrar usuÃ¡rios</a>
 			    </div>
 			</div>
 		</aside>
@@ -26,21 +26,21 @@
 
 			<div class="visualizar">
 				<div class="row">
-					<h4 class="col-md-4" id="visualizar">Lista de usuários cadastrados</h4>
+					<h4 class="col-md-4" id="visualizar">Lista de usuÃ¡rios cadastrados</h4>
 
-					<div class="input-group  offset-md-1 col-md-7">
-						<input type="search" class="form-control" placeholder="Faça sua busca">
+			<!--   <div class="input-group  offset-md-1 col-md-7">
+						<input type="search" class="form-control" placeholder="FaÃ§a sua busca">
 						<div class="input-group-prepend" >
 							<div class="input-group-text" style="background-color: transparent; border: none;"><img src="img/busca.png" width="20"></div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
 				<br><br><br>
 				<div class="over">
 					<table class="table table-hover">
 						<thead>
-							<tr><th>ID</th><th>Nome</th><th>Sobrenome</th><th>Endereço</th><th>Nascimento</th><th>Telefone</th> <th>Ações</th></tr>
+							<tr><th>ID</th><th>Nome</th><th>Sobrenome</th><th>EndereÃ§o</th><th>Nascimento</th><th>Telefone</th> <th>AÃ§Ãµes</th></tr>
 						</thead>
 						<tbody>
 							<% 
@@ -80,8 +80,8 @@
 				<br>
 			</div>
 
-			<div class="cadastrar">
-				<h4 class="" id="cadastrar">Cadastrar usuário</h4>
+			<div class="cadastrar col-md-8 offset-md-2">
+				<h4 class="" id="cadastrar">Cadastrar usuÃ¡rio</h4>
 
 				<br><br>
 
@@ -99,7 +99,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<label for="endereco">Endereco: </label>
-							<input type="text" name="endereco" id="endereco" class="form-control" placeholder="Seu endereço" required>
+							<input type="text" name="endereco" id="endereco" class="form-control" placeholder="Seu endereÃ§o" required>
 						</div>
 					</div>
 					<div class="row">
@@ -109,7 +109,7 @@
 						</div>
 						<div class="col-md-6 offset-md-1">
 							<label for="telefone">Telefone: </label>
-							<input type="text" name="telefone" id="telefone" class="form-control" placeholder="Telefone" required>
+							<input type="text" name="telefone" id="telefonePessoa" class="form-control" placeholder="Telefone" required>
 						</div>
 					</div>
 					<br>
@@ -145,13 +145,13 @@
 						  <div class="modal-dialog" role="document">
 						    <div class="modal-content">
 						      <div class="modal-header">
-						        <h5 class="modal-title" id="exampleModalLabel">Cadastro de usuário</h5>
+						        <h5 class="modal-title" id="exampleModalLabel">Cadastro de usuÃ¡rio</h5>
 						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						          <span aria-hidden="true">&times;</span>
 						        </button>
 						      </div>
 						      <div class="modal-body">
-						        <p>Usuário cadastrado com sucesso.</p>
+						        <p>UsuÃ¡rio cadastrado com sucesso.</p>
 						      </div>
 						      <div class="modal-footer">
 						      	<form action="index.jsp">
@@ -168,13 +168,13 @@
 						  <div class="modal-dialog" role="document">
 						    <div class="modal-content">
 						      <div class="modal-header">
-						        <h5 class="modal-title" id="exampleModalLabel">Cadastro de usuário</h5>
+						        <h5 class="modal-title" id="exampleModalLabel">Cadastro de usuÃ¡rio</h5>
 						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						          <span aria-hidden="true">&times;</span>
 						        </button>
 						      </div>
 						      <div class="modal-body">
-						        <p>Não foi possível cadastrar o usuário, tente mais tarde.</p>
+						        <p>NÃ£o foi possÃ­vel cadastrar o usuÃ¡rio, tente mais tarde.</p>
 						      </div>
 						      <div class="modal-footer">
 						      	<form action="index.jsp">
@@ -190,12 +190,14 @@
 				%>
 			</div>
 		</div>
-
+		
+		
+	<script src="js/jquery.mask.js" type="text/javascript"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	
 	<script>
 		$(document).ready(function(){ $('#exampleModal').modal('show'); });
+		 $('#telefonePessoa').mask('(00) 00000-0000');
 	</script>
 	</body>
 </html>
