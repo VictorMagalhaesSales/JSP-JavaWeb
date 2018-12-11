@@ -1,6 +1,6 @@
 # CRUD com Java para Web
 
-### Detalhes do site
+### Detalhes do projeto
 * Projetinho de CRUD de usuários;
 * Ferramentas: JEE, JSF, MySQL e HTML;
 
