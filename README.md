@@ -2,7 +2,7 @@
 
 ### Detalhes do projeto
 * Projetinho de CRUD de usuários;
-* Ferramentas: JEE, JSF, MySQL e HTML;
+* Ferramentas: JEE, JSP, MySQL e HTML;
 
 ### Algumas fotos
 
